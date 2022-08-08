@@ -105,26 +105,26 @@ h1.error {
   border-radius: 2px;
   border: 1px solid #e5e5e5;
   background: white;
-}
 
-.custom-checkbox input {
-  -webkit-appearance: none;
-  position: absolute;
-}
+  & input {
+    -webkit-appearance: none;
+    position: absolute;
+  }
 
-.checkbox {
-  content: "";
-  width: 12px;
-  height: 12px;
-  background: rgb(0, 255, 255);
-  border-radius: 2px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: none;
-}
+  & .checkbox {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: rgb(0, 255, 255);
+    border-radius: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
 
-.custom-checkbox input:checked ~ .checkbox {
-  display: block;
+  & input:checked ~ .checkbox {
+    display: block;
+  }
 }
