@@ -35,13 +35,16 @@ export function TableRow({
   return (
     <tr className={`${style} `}>
       <TableCell>
-        <label htmlFor={user.id.toString()}></label>
-        <Input
-          type="checkbox"
-          id={user.id.toString()}
-          checked={checked}
-          onChange={onChange}
-        />
+        <label htmlFor={user.id.toString()} className="custom-checkbox">
+          <Input
+            type="checkbox"
+            id={user.id.toString()}
+            checked={checked}
+            onChange={onChange}
+            className="hidden-checkbox"
+          />
+          <span className="checkbox"></span>
+        </label>
       </TableCell>
       <TableCell>{fullname.name}</TableCell>
       <TableCell>{fullname.surname}</TableCell>

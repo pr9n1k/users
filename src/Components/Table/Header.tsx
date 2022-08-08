@@ -11,13 +11,16 @@ export function TableHeader({ checked, onChange }: TableHeaderProps) {
     <thead>
       <tr>
         <th>
-          <label htmlFor="all"></label>
-          <Input
-            type="checkbox"
-            onChange={onChange}
-            checked={checked}
-            id="all"
-          />
+          <label htmlFor="all" className="custom-checkbox">
+            <Input
+              type="checkbox"
+              onChange={onChange}
+              checked={checked}
+              id="all"
+              className="hidden-checkbox"
+            />
+            <span className="checkbox"></span>
+          </label>
         </th>
         <th>Имя</th>
         <th>Фамилия</th>
