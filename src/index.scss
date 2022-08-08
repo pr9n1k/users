@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+p {
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+}
+h1.error {
+  color: red;
+}
+.header {
+  text-align: center;
+  background: #e5e5e5;
+  font-size: 25px;
+  padding: 10px;
+  font-weight: 700;
+}
+.main {
+  flex: 1 0 auto;
+  padding-top: 30px;
+}
+.footer {
+  flex: 0 0 auto;
+  padding: 5px;
+  font-size: 16px;
+  text-align: center;
+  background: #e5e5e5;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.table {
+  &__row--ckecked {
+    background: rgb(0, 217, 255) !important;
+  }
+
+  width: 100%;
+  margin: 40px 0 20px;
+  border: 5px solid #fff;
+  border-top: 5px solid #fff;
+  border-bottom: 3px solid #fff;
+  border-collapse: collapse;
+  outline: 3px solid #ff4800;
+  font-size: 15px;
+  background: #fff;
+
+  & th {
+    font-weight: bold;
+    padding: 7px;
+    background: #ff4800;
+    border: none;
+    text-align: left;
+    font-size: 15px;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #ff4800;
+  }
+  & td {
+    padding: 7px;
+    border: none;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    font-size: 15px;
+    margin: 0;
+  }
+  & tbody tr:nth-child(even) {
+    background: #f8f8f8;
+  }
+  .checkbox {
+    cursor: pointer;
+  }
+}
